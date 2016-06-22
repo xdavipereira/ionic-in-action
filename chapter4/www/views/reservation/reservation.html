@@ -1,0 +1,28 @@
+<ion-view view-title="Reservation">
+    <ion-content>
+        <div class="list">
+            <a class="item item-icon-left">
+               <i class="icon ion-key"></i>
+                 Room: {{reservation.room}}
+            </a>
+            <a  class="item item-icon-left">
+                <i class="icon ion-calendar"></i>
+                Check In: {{reservation.checkin | date:'mediumDate'}}
+            </a>
+            <a class="item item-icon-left">
+               <i class="icon ion-calendar"></i>
+                Check Out: {{reservation.checkout | date:'mediumDate'}}
+            </a>
+            <a class="item item-icon-left">
+                <i class="icon ion-pricetag"></i>
+                Rate: {{reservation.rate * 7 | currency}}/night
+            </a>
+            <a  class="item item-icon-left">
+                <i class="icon ion-wifi"></i>
+                Wifi Code: {{reservation.wifi}}
+            </a>
+            
+            <input type="text" ng-model="texto" name="texto"/>
+        </div>
+    </ion-content>
+</ion-view>

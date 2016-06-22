@@ -1,0 +1,25 @@
+{
+  "name": "HelloIonic",
+  "private": true,
+  "devDependencies": {
+    "ionic": "driftyco/ionic-bower#1.2.4",
+    "highcharts": "highcharts-release#^4.2.3",
+    "highcharts-ng": "^0.0.11"
+  },
+  "authors": [
+    "Davi Pereira <xdavipereira@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "www/lib",
+    "test",
+    "tests"
+  ]
+}

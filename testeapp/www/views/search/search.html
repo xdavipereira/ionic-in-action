@@ -1,0 +1,15 @@
+<ion-view view-title="Find Locations">
+    <ion-content>
+        <div class="list">
+            <div class="item item-input-inset">
+                <label class="item-input-wrapper">
+                    <input type="search" ng-model="model.search" placeholder="Procure por um Local">
+                </label>
+                <button ng-click="buscar()"class="button button-small button-positive">Enviar</button>
+            </div>
+            <div class="item" ng-repeat="result in listaDaPesquisa">
+                {{result.formatted_address}}
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

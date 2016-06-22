@@ -1,0 +1,42 @@
+<ion-view view-title="Cadastrar Aluno">
+    <ion-content>
+    <form ng-submit="salva()">
+      <div class="list list-inset">
+          <label class="item item-input">
+            <input type="text" id="nome" 
+		name="nome" ng-model="aluno.nome" placeholder="Nome">
+          </label>
+          <label class="item item-input">
+            <input type="text" ng-model="aluno.mae_nome" id="mae_nome" 
+			placeholder="Nome da Mãe" name="mae_nome" >
+          </label>
+          <label class="item item-input">
+            <input type="text" ng-model="aluno.pai_nome" id="pai_nome" 
+			placeholder="Nome do Pai" name="pai_nome" >
+          </label>
+          <label class="item item-input">
+            <input type="text" ng-model="aluno.telefone" id="telefone" 
+			placeholder="Telefone" name="telefone" >
+          </label>
+          <label class="item item-input">
+            <input type="text" ng-model="aluno.email" id="email" 
+			placeholder="email@exemplo.com" name="email" >
+          </label>
+          <label class="item item-input">
+            <input type="text" ng-model="aluno.data_nascimento" id="data_nascimento" 
+			placeholder="Date de Nascimento ex '1994-08-07'" name="data_nascimento" >
+          </label>
+          <label class="item item-input">
+            <input type="text" ng-model="aluno.endereco" id="endereco" 
+			placeholder="Endereco" name="endereco" >
+          </label>
+          <button type="submit" class="button button-positive">
+                  Cadastrar
+          </button>
+    </div>
+        
+        
+    </form>
+        
+    </ion-content>
+</ion-view>

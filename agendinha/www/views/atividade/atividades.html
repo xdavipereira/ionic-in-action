@@ -1,0 +1,11 @@
+<ion-view view-title="Lista de Atividades">
+    <ion-content>
+               <div class="list">
+                    <a class="item item-avatar" ng-repeat="atividade in atividades" href="#">
+                      <img src="http://ionicframework.com/img/docs/venkman.jpg">
+                      <h2>{{atividade.titulo}}</h2>
+                      <p>{{atividade.data | date: mediumDate}}</p>
+                    </a>
+                </div>
+    </ion-content>
+</ion-view>

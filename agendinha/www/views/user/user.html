@@ -1,0 +1,22 @@
+<ion-view view-title="Cadastrar Aluno">
+    <ion-content>
+    <form ng-submit="salva()">
+      <div class="list list-inset">
+          <label class="item item-input">
+            <input type="text" id="titulo" 
+		name="titulo" ng-model="user.login" placeholder="Titulo">
+          </label>
+          <label class="item item-input">
+            <input type="text" ng-model="user.email" id="atividade_classe" 
+			placeholder="Atividade Classe" name="atividade_classe" >
+          </label>
+          <button type="submit" class="button button-positive">
+                  Cadastrar
+          </button>
+    </div>
+        
+        
+    </form>
+        
+    </ion-content>
+</ion-view>

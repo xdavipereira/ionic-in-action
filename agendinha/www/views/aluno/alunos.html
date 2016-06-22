@@ -1,0 +1,13 @@
+<ion-view view-title="Lista de Alunos">
+    <ion-content>
+        <ion-refresher pulling-text="Pull to refresh"></ion-refresher>
+        <ion-list>
+            <ion-item ng-repeat="aluno in alunos" ng-click="">
+                {{aluno.nome}} - {{aluno.data_nascimento | date: mediumDate}}
+                <button ng-click="remove(aluno)">Remover</button>    
+            </ion-item>
+            
+            
+        </ion-list>
+    </ion-content>
+</ion-view>
